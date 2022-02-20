@@ -9,6 +9,7 @@ const VideosDisplay: React.FC = () => {
 
   useEffect(() => {
     fetchVideos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
