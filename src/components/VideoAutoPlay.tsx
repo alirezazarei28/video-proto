@@ -26,6 +26,9 @@ const VideoAutoPlay: React.FC<{ videos: string[] }> = ({ videos }) => {
                 autoPlay={false}
                 muted
                 loop
+                controls
+                height={300}
+                width={300}
               >
                 <source type="video/mp4" src={video}></source>
                 {"browser does not support video"}
