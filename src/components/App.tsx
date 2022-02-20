@@ -6,7 +6,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <div>
-        <h1>Saba Idea Interview Task</h1>
+        <h1>{"Saba Idea Interview Task"}</h1>
         <VideosDisplay />
       </div>
     </Provider>

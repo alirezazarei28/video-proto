@@ -7,5 +7,5 @@ const reducers = combineReducers({
 
 export default reducers;
 
-// we put this here to tell react-redux type of information inside the store
+// it's here to tell react-redux type of information inside the store
 export type RootState = ReturnType<typeof reducers>;
