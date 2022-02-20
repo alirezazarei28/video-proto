@@ -17,8 +17,10 @@ const VideosDisplay: React.FC = () => {
       <div>
         {error && <h3>{error}</h3>}
         {loading && <h3>{"loading ..."}</h3>}
-        {/* {!error && !loading && data.map((name) => <div key={name}>{name}</div>)} */}
-        {!error && !loading && <VideoAutoPlay videos={data} />}
+
+        {!error && !loading && data.length !== 0 && (
+          <VideoAutoPlay videos={data} />
+        )}
       </div>
     </div>
   );
